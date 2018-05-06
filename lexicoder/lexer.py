@@ -3,6 +3,10 @@ import re
 from typing import List, Optional
 
 
+class LexerEOF(Exception):
+    pass
+
+
 class Lexer(object):
     """Transform a text stream into a token stream
     """
